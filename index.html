@@ -34,6 +34,40 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .tooltip {
+      font-size: 18px;
+      position: relative;
+      display: inline-block;
+      /* line-height: 1.5; */
+      /* margin-bottom: 10px; */
+    }
+    .tooltip .tooltiptext {
+      font-size: 16px;
+      visibility: hidden;
+      background-color: white;
+      color: black;
+      text-align: center;
+      /* border-radius: 6px; */
+      border: 1px dashed black;
+      position: absolute;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0s;
+      top: 0;
+      /* bottom: 150%; */
+      left: 100%;
+      margin-left: 0px;
+      /* white-space: normal; */
+      width: 80%;
+      padding: 0 32px;
+      transition: opacity 0.5s;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
   </style>
 </head>
 <body>
@@ -58,7 +92,11 @@
   <h2>Research</h2>
   <p>
   <b>Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives</b><br>
-    Kristen Grauman, ...(+80)..., Zhifan Zhu, ...<br>
+  <span class="tooltip">Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, [and 95 others, including <b>Zhifan Zhu</b>]
+    <span class="tooltiptext">
+      Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, Triantafyllos Afouras, Kumar Ashutosh, Vijay Baiyya, Siddhant Bansal, Bikram Boote, Eugene Byrne, Zach Chavis, Joya Chen, Feng Cheng, Fu-Jen Chu, Sean Crane, Avijit Dasgupta, Jing Dong, Maria Escobar, Cristhian Forigua, Abrham Gebreselasie, Sanjay Haresh, Jing Huang, Md Mohaiminul Islam, Suyog Jain, Rawal Khirodkar, Devansh Kukreja, Kevin J Liang, Jia-Wei Liu, Sagnik Majumder, Yongsen Mao, Miguel Martin, Effrosyni Mavroudi, Tushar Nagarajan, Francesco Ragusa, Santhosh Ramakrishnan, Luigi Seminara, Arjun Somayazulu, Yale Song, Shan Su, Zihui Xue, Edward Zhang, Jinxu Zhang, Angela Castillo, Changan Chen, Xinzhu Fu, Ryosuke Furuta, Cristina Gonzalez, Prince Gupta, Jiabo Hu, Yifei Huang, Yiming Huang, Weslie Khoo, Anush Kumar, Robert Kuo, Sach Lakhavani, Miao Liu, Mi Luo, Zhengyi Luo, Brighid Meredith, Austin Miller, Oluwatumininu Oguntola, Xiaqing Pan, Penny Peng, Shraman Pramanick, Merey Ramazanova, Fiona Ryan, Wei Shan, Kiran Somasundaram, Chenan Song, Audrey Southerland, Masatoshi Tateno, Huiyu Wang, Yuchen Wang, Takuma Yagi, Mingfei Yan, Xitong Yang, Zecheng Yu, Shengxin Cindy Zha, Chen Zhao, Ziwei Zhao, <b>Zhifan Zhu</b>, Jeff Zhuo, Pablo Arbelaez, Gedas Bertasius, David Crandall, Dima Damen, Jakob Engel, Giovanni Maria Farinella, Antonino Furnari, Bernard Ghanem, Judy Hoffman, C. V. Jawahar, Richard Newcombe, Hyun Soo Park, James M. Rehg, Yoichi Sato, Manolis Savva, Jianbo Shi, Mike Zheng Shou, Michael Wray
+    </span>
+  </span><br>
     <a href="https://ai.meta.com/blog/ego-exo4d-video-learning-perception/">Blog</a> /
     <a href="https://ego-exo4d-data.org/paper/ego-exo4d.pdf">PDF</a>
   </p>
