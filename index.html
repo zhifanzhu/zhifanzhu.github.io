@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
   <title>Zhifan Zhu, PhD student at University of Bristol</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      font-size: 1em;
       margin: 0;
-      max-width: 1200px;
-      padding: 20px;
+      max-width: 80em;
+      padding: 1em;
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
+      font-size: 2em;
+      margin-bottom: 1em;
     }
 
     h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
+      font-size: 1.5em;
+      margin-bottom: 0em;
     }
 
     p {
-      font-size: 18px;
+      font-size: 1em;
       line-height: 1.5;
-      margin-bottom: 10px;
+      margin-bottom: 0.2em;
+    }
+
+    .intro {
+      width: 80%;
+      flex-wrap: wrap;
+      display: flex;
+      margin-bottom: -3em;
+    }
+    .intro-content {
+      flex: 50%;
     }
 
     li {
       margin: 0;
+      font-size: 1em;
       padding: 0.2em;
     }
 
@@ -41,53 +54,70 @@
     }
 
     .tooltip {
-      font-size: 18px;
+      font-size: 1em;
       position: relative;
       display: inline-block;
-      /* line-height: 1.5; */
-      /* margin-bottom: 10px; */
     }
     .tooltip .tooltiptext {
-      font-size: 16px;
+      font-size: 0.85em;
       visibility: hidden;
       background-color: white;
       color: black;
       text-align: center;
-      /* border-radius: 6px; */
-      border: 1px dashed black;
+      border: 0.05em dashed black;
       position: absolute;
       z-index: 1;
       opacity: 0;
       transition: opacity 0s;
       top: 100%;
-      /* bottom: 150%; */
       left: 60%;
-      /* margin-left: 0px; */
-      /* white-space: normal; */
       width: 80%;
-      padding: 0 24px;
+      padding: 0 1.5em;
       transition: opacity 0.3s;
     }
     .tooltip:hover .tooltiptext {
       visibility: visible;
       opacity: 1;
     }
+    @media only screen and (max-width: 768px) {
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+          opacity: 0;
+        }
+    }
+    /* .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    } */
 
   </style>
+
 </head>
 <body>
-  <h1>Zhifan Zhu</h1>
-  
-  <p>
-    I'm a PhD student in Computer Vision at the University of Bristol since Dec 2021, supervised by <a href="https://dimadamen.github.io">Prof. Dima Damen</a>.<br>
-    My interests are in video(ordered images) understanding, egocentric vision and 3D reconstruction of dynamic objects and interactions.
-  </p>
-  <p>
-    <a href="https://scholar.google.com/citations?user=9_7rBUIAAAAJ&hl=en&oi=ao">Google Scholar</a> / 
-    <a href="https://twitter.com/zhifan_zhu">Twitter</a> / 
-    <a href="mailto:zhifan.zhu-at-bristol.ac.uk">Email</a> /
-    <a href="https://github.com/zhifanzhu">GitHub</a>
-  </p>
+
+  <div class="intro">
+    <div class="intro-content">
+      <h1>Zhifan Zhu</h1>
+      <p>
+        I'm a PhD student in Computer Vision at the University of Bristol since Dec 2021, supervised by <a
+          href="https://dimadamen.github.io">Prof. Dima Damen</a>.<br>
+        My interests are in egocentric vision and 3D reconstruction of dynamic objects and interactions.
+      </p>
+      <p>
+        <a href="https://scholar.google.com/citations?user=9_7rBUIAAAAJ&hl=en&oi=ao">Google Scholar</a> /
+        <a href="https://twitter.com/zhifan_zhu">Twitter</a> /
+        <a href="mailto:zhifan.zhu-at-bristol.ac.uk">Email</a> /
+        <a href="https://github.com/zhifanzhu">GitHub</a>
+      </p>
+    </div>
+
+    <div class="intro-content">
+      <figure>
+        <img width="267" src="images/Moustiers-Sainte-Marie.jpg" alt="Moustiers-Sainte-Marie, 2024" />
+        <figcaption>Moustiers-Sainte-Marie, 2024.</figcaption>
+      </figure>
+    </div>
+  </div>
 
   <h2>News</h2>
   <ul>
