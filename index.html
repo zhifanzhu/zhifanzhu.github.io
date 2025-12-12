@@ -40,35 +40,58 @@
       text-decoration: underline;
     }
 
+
+    /*
     .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      position: absolute;
+      top: 0%;
+      left: 120%;
+
+      width: 600px;
+      padding: 8px 16px;
+
+      background: white;
+      border: 1px dashed black;
+      color: black;
+      text-align: center;
+
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+      */
+
+    .egoexo4d-tooltip {
       font-size: 18px;
       position: relative;
       display: inline-block;
-      /* line-height: 1.5; */
-      /* margin-bottom: 10px; */
     }
-    .tooltip .tooltiptext {
+    .egoexo4d-tooltip .egoexo4d-tooltiptext {
       font-size: 16px;
       visibility: hidden;
       background-color: white;
       color: black;
       text-align: center;
-      /* border-radius: 6px; */
       border: 1px dashed black;
       position: absolute;
       z-index: 1;
       opacity: 0;
       transition: opacity 0s;
       top: 100%;
-      /* bottom: 150%; */
       left: 60%;
-      /* margin-left: 0px; */
-      /* white-space: normal; */
       width: 80%;
       padding: 0 24px;
       transition: opacity 0.3s;
     }
-    .tooltip:hover .tooltiptext {
+    .egoexo4d-tooltip:hover .egoexo4d-tooltiptext {
       visibility: visible;
       opacity: 1;
     }
@@ -101,14 +124,30 @@
   <h2>Research</h2>
 
   <p>
+    <b>The N-Body Problem: Parallel Execution from Single-Person Egocentric Video
+    </b><br>
+    <b>Zhifan Zhu</b>, Yifei Huang, Yoichi Sato, Dima Damen<br>
+    <i>Arxiv</i>, 2025 <br>
+    <a href="https://zhifanzhu.github.io/ego-nbody/">Webpage</a> |
+    <a href="https://arxiv.org/abs">Arxiv (coming)</a>
+    <!-- | <span class="tooltip"><i style="color: gray;">TL;DR</i>
+      <span class="tooltiptext">
+        If I invite a friend to my house, can we speed-up my work?
+      </span>
+    </span> -->
+  </p>
+
+  <p>
     <b>Reconstructing Objects along Hand Interaction Timelines in Egocentric Video
     </b><br>
     <b>Zhifan Zhu</b>, Siddhant Bansal, Shashank Tripathi, Dima Damen<br>
     <i>Arxiv</i>, 2025 <br>
     <a href="https://zhifanzhu.github.io/objects-along-hit/">Webpage</a> |
     <a href="https://arxiv.org/abs/2512.07394">Arxiv</a>
-    <!-- <br><i>A constrained optimisation framework that reconstructs object poses in egocentric video --> 
-    <!--     by modelling temporal constraints, from static to stably grasped.</i><br> -->
+    <!-- |  <span class="tooltip"><i style="color: gray;">TL;DR</i>
+      <span class="tooltiptext">
+        A constrained optimisation framework that reconstructs object poses in egocentric video
+      </span> -->
   </p>
 
   <p>
@@ -133,8 +172,8 @@
 
   <p>
   <b>Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives</b><br>
-  <span class="tooltip">Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, [and 95 others, including <b>Zhifan Zhu</b>]
-    <span class="tooltiptext">
+  <span class="egoexo4d-tooltip">Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, [and 95 others, including <b>Zhifan Zhu</b>]
+    <span class="egoexo4d-tooltiptext">
       Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, Triantafyllos Afouras, Kumar Ashutosh, Vijay Baiyya, Siddhant Bansal, Bikram Boote, Eugene Byrne, Zach Chavis, Joya Chen, Feng Cheng, Fu-Jen Chu, Sean Crane, Avijit Dasgupta, Jing Dong, Maria Escobar, Cristhian Forigua, Abrham Gebreselasie, Sanjay Haresh, Jing Huang, Md Mohaiminul Islam, Suyog Jain, Rawal Khirodkar, Devansh Kukreja, Kevin J Liang, Jia-Wei Liu, Sagnik Majumder, Yongsen Mao, Miguel Martin, Effrosyni Mavroudi, Tushar Nagarajan, Francesco Ragusa, Santhosh Ramakrishnan, Luigi Seminara, Arjun Somayazulu, Yale Song, Shan Su, Zihui Xue, Edward Zhang, Jinxu Zhang, Angela Castillo, Changan Chen, Xinzhu Fu, Ryosuke Furuta, Cristina Gonzalez, Prince Gupta, Jiabo Hu, Yifei Huang, Yiming Huang, Weslie Khoo, Anush Kumar, Robert Kuo, Sach Lakhavani, Miao Liu, Mi Luo, Zhengyi Luo, Brighid Meredith, Austin Miller, Oluwatumininu Oguntola, Xiaqing Pan, Penny Peng, Shraman Pramanick, Merey Ramazanova, Fiona Ryan, Wei Shan, Kiran Somasundaram, Chenan Song, Audrey Southerland, Masatoshi Tateno, Huiyu Wang, Yuchen Wang, Takuma Yagi, Mingfei Yan, Xitong Yang, Zecheng Yu, Shengxin Cindy Zha, Chen Zhao, Ziwei Zhao, <b>Zhifan Zhu</b>, Jeff Zhuo, Pablo Arbelaez, Gedas Bertasius, David Crandall, Dima Damen, Jakob Engel, Giovanni Maria Farinella, Antonino Furnari, Bernard Ghanem, Judy Hoffman, C. V. Jawahar, Richard Newcombe, Hyun Soo Park, James M. Rehg, Yoichi Sato, Manolis Savva, Jianbo Shi, Mike Zheng Shou, Michael Wray
     </span>
   </span><br>
